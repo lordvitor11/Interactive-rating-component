@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/favicon-32x32.png" type="image/x-icon">
+    <title>Rating Page</title>
+</head>
+<body>
+    <main>
+        <section class="container">
+            <div class="content" id="question">
+                <img class="star" src="assets/icon-star.svg" alt="icon">
+                <h1>Como foi a sua experiência?</h1>
+                <p>Por favor, deixe-nos saber como foi a sua solicitação de suporte. Todos os comentários são apreciados para nos ajudar a melhorar nossa plataforma!</p>
+                <div class="options">
+                    <div id="opt1" class="item" onclick="verify(0)">1</div>
+                    <div id="opt2" class="item" onclick="verify(1)">2</div>
+                    <div id="opt3" class="item" onclick="verify(2)">3</div>
+                    <div id="opt4" class="item" onclick="verify(3)">4</div>
+                    <div id="opt5" class="item" onclick="verify(4)">5</div>
+                </div>
+                <button onclick="proceed()">ENVIAR</button>
+            </div>
+
+            <div class="content" id="result">
+                <img src="assets/illustration-thank-you.svg" alt="">
+                <div class="rate"><span></span></div>
+                <h1>Obrigado!</h1>
+                <p>Agradecemos que você tenha dedicado um tempo para dar uma classificação.<br>Se você precisar de mais suporte, não hesite em entrar em contato!</p>
+            </div>
+        </section>
+    </main>
+</body>
+<script src="script.js"></script>
+</html>
