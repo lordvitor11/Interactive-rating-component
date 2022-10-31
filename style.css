@@ -117,3 +117,30 @@ button:hover {
 #result img {
     margin: 30px 0px 20px 0px;
 }
+
+
+@media screen and (max-width: 375px) {
+    main .container {
+        width: 300px;
+    }
+
+    .content .star {
+        padding: 15px;
+        margin-bottom: 10px;
+    }
+
+    .options .item {
+        width: 40px;
+        height: 40px;
+        line-height: 45px;
+    }
+
+    .content button {
+        margin-top: 20px;
+    }
+
+    .container #result img {
+        width: 50%;
+        margin: 10px 0px 20px 0px;
+    }
+}
